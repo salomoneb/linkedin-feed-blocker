@@ -1,0 +1,11 @@
+	{
+		"name": "LinkedIn News Feed Blocker",
+		"version": "1.0",
+		"description": "Hide the LinkedIn News Feed",
+		"manifest_version": 2,
+		"permissions": ["activeTab"],
+		"content_scripts": [{
+			"matches": ["*://*.linkedin.com/feed/*"],
+			"css": ["newsfeed-blocker.css"]			
+		}]
+	}
